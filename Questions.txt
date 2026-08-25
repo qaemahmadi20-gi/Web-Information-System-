@@ -1,0 +1,60 @@
+LAB ASSIGNMENT QUESTIONS AND ANSWERS
+Introduction to Object-Oriented PHP
+Web Information Systems
+
+===========================================
+PART C - Create Another Object
+===========================================
+
+Question: How many classes did you create?
+Answer: 1 (The Student class)
+
+Question: How many objects did you create?
+Answer: 2 ($student1 and $student2)
+
+===========================================
+PART D - Access Modifiers - Try This
+===========================================
+
+Question: Does echo $account1->balance work?
+Answer: No
+
+Question: Why?
+Answer: Because $balance is a private property and can only be accessed inside the same class. Private properties cannot be accessed from outside the class, even from an object of that class.
+
+===========================================
+PART F - Understanding Inheritance
+===========================================
+
+Question 1: Which class is the parent class?
+Answer: Person
+
+Question 2: Which class is the child class?
+Answer: Student
+
+Question 3: Which keyword creates the inheritance relationship?
+Answer: extends
+
+Question 4: The introduce() method was written inside which class?
+Answer: Person class
+
+Question 5: Can the $student1 object call introduce()?
+Answer: Yes
+
+Question 6: Why can $student1 use introduce() even though it is not written inside the Student class?
+Answer: Because of inheritance. When a class extends another class (child extends parent), the child class inherits all public and protected properties and methods from the parent class. Since Student extends Person, it automatically gets access to the introduce() method defined in the Person class.
+
+===========================================
+ADDITIONAL NOTES
+===========================================
+
+Access Modifiers Summary:
+- public: Can be accessed from anywhere (inside and outside the class)
+- private: Can only be accessed inside the same class
+- protected: Can be accessed inside the same class and by child classes (inherited classes)
+
+Inheritance Key Concepts:
+- Parent class (also called base class or superclass): The class being inherited from
+- Child class (also called derived class or subclass): The class that inherits from the parent
+- extends keyword: Used to create inheritance relationship in PHP
+- Child classes inherit public and protected members from parent classes
